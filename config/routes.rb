@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root 'procesos#index'
 
   resources :procesos
+  resources :questions
 end

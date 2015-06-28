@@ -1,0 +1,16 @@
+.wrapper_with_padding
+  %h3 Procesos de selección
+  %buttom= link_to "New Question", new_question_path, class: "button"
+
+  #notes.clearfix
+    - unless @questions.blank?
+      - @questions.each do |question|
+        %a{href:(url_for [question])}
+          .note
+            %h2.title= question.name
+            %p.title= question.state
+            
+    - else
+      %h2 Add a note
+      %p It appears you haven't created any notes yet... Lets fix that. Why don't you create a new note below
+      %buttom= link_to "New Precess", new_question_path

@@ -1,0 +1,7 @@
+.wrapper_with_padding
+  = simple_form_for Question.new do |f|
+    = f.input :title
+    = f.input :description
+    = f.input :time
+    -# = f.input :company_logo
+    = f.button :submit
