@@ -1,0 +1,28 @@
+
+development:
+  host: localhost
+  adapter: postgresql
+  encoding: unicode
+  database: oviewz_development
+  pool: 5
+  username: carlos
+  password: bat86
+
+test:
+  host: localhost
+  adapter: postgresql
+  encoding: unicode
+  database: oviewz_test
+  pool: 5
+  username: carlos
+  password: bat86
+
+production:
+  host: localhost
+  adapter: postgresql
+  encoding: unicode
+  database: oviewz_production
+  pool: 5
+  username: carlos
+  password: bat86
+

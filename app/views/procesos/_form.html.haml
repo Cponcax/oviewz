@@ -1,0 +1,12 @@
+.wrapper_with_padding
+  = simple_form_for @proceso do |f|
+    = f.input :name
+    = f.input :description
+    = f.input :function
+    = f.input :workplace
+    = f.input :deadline
+    = f.input :email
+    = f.input :state
+    = f.input :color
+    -# = f.input :company_logo
+    = f.button :submit
